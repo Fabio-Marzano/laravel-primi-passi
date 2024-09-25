@@ -18,3 +18,10 @@ Route::get('/', function () {
 
     return view('home', compact('welcome'));
 })->name('homepage');
+
+Route::get('/about', function(){
+    $title = 'Il mio profilo';
+    $text = "Lorem ipsum dolor sit amet, consectetur adipiscing el aspect et euismod tempor";
+    $films = ['Harry Potter e la pietra filosofale', 'Harry Potter e la camera dei segreti', 'Harry Potter e il prigioniero di Azkaban', 'Harry Potter e il calice di fuoco'];
+    return view('about', compact('title', 'text', 'films'));
+})->name('about');
