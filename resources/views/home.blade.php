@@ -18,7 +18,7 @@
                             <li class="px-2"><a class="text-decoration-none text-white"
                                  href="{{ route('homepage') }}">Homepage</a></li>  
                             <li class="px-2"><a class="text-decoration-none text-white" href="{{ route('about') }}">About</a></li>
-                            <li class="px-2"><a class="text-decoration-none text-white" href="#">Contacts</a></li>
+                            <li class="px-2"><a class="text-decoration-none text-white" href="{{ route('contacts') }}">Contacts</a></li>
 
                         </ul>
                     </div>
