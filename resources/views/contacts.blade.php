@@ -31,12 +31,7 @@
             <div class="row">
                 <div class="col-12">
                     <h1>{{ $title }}</h1>
-                    <p>{{ $text }}</p>
-                    <ul class="list-unstyled">
-                        @foreach($films as $film)
-                            <li>{{ $film }}</li>
-                        @endforeach
-                    </ul>
+                    <p>{{ $message }}</p>
                 </div>
             </div>
         </div>

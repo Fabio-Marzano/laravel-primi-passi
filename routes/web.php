@@ -25,3 +25,9 @@ Route::get('/about', function(){
     $films = ['Harry Potter e la pietra filosofale', 'Harry Potter e la camera dei segreti', 'Harry Potter e il prigioniero di Azkaban', 'Harry Potter e il calice di fuoco'];
     return view('about', compact('title', 'text', 'films'));
 })->name('about');
+
+Route::get('/contacts', function(){
+    $title = 'Contatti';
+    $message = "Contattaci per ricevere le ultime notizie";
+    return view('contacts', compact('title', 'message'));
+})->name('contacts');
